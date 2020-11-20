@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping cart</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container headerInside">
+            <div class="logo">
+                BRAN<span>D</span>
+            </div>
+            <form class="searchWrap">
+                <div class="searchBrowse">
+                    Browse <i class="fas fa-caret-down"></i>
+                </div>
+                <input placeholder="Search for Item..." type="text">
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <a class="headerCart" href="shopping-cart.html">
+                <img src="images/cart.png" alt="">
+            </a>
+            <button class="accountBtn">
+                My Account
+                <i class="fas fa-caret-down"></i>
+            </button>
+        </div>
+    </header>
+    <nav class="topNav">
+        <a href="index.html">Home</a>
+        <a href="">Man</a>
+        <a href="">Women</a>
+        <a href="">Kids</a>
+        <a href="">Accoseriese</a>
+        <a href="">Featured</a>
+        <a href="">Hot Deals </a>
+    </nav>
+
+    <div class="newArrivals">
+        <div class="container">
+            <div class="newArrivals__header">NEW ARRIVALS</div>
+            <div class="newArrivals__path">HOME / MEN / <span>NEW ARRIVALS</span></div>
+        </div>
+    </div>
+
+    <main>
+        <form class="container shoppingCart">
+            <div class="shoppingCart__cart">
+                <div class="shoppingCart__cart_row">
+                    <span class="productDetails_width">PRODUCT DETAILS</span>
+                    <span class="price_width">UNIT PRICE</span>
+                    <span class="quantity_width">QUANTITY</span>
+                    <span class="shipping_width">SHIPPING</span>
+                    <span class="subTotal_width">SUBTOTAL</span>
+                    <span class="action_width">ACTION</span>
+                </div>
+
+                <div class="shoppingCart__cart_row">
+                    <div class="productDetails_width shoppingCart__product">
+                        <img src="images/shopping-cart/photo1.png" alt="photo">
+                        <div class="shoppingCart__product_header">Mango People T-shirt</div>
+                        <p>
+                            <b>Color: </b>Red
+                            <br>
+                            <b>Size: </b>XII
+                        </p>
+                    </div>
+                    <div class="price_width shoppingCart__cart_price">$150</div>
+                    <div class="quantity_width shoppingCart__cart_quantity">
+                        <input type="number" value="1" min="0" max="999">
+                    </div>
+                    <div class="shipping_width shoppingCart__cart_shipping">FREE</div>
+                    <div class="subTotal_width shoppingCart__cart_subTotal">$300</div>
+                    <div class="action_width shoppingCart__cart_action">
+                        <img src="images/shopping-cart/delete.png" alt="delete">
+                    </div>
+                </div>
+
+                <div class="shoppingCart__cart_row">
+                    <div class="productDetails_width shoppingCart__product">
+                        <img src="images/shopping-cart/photo2.png" alt="photo">
+                        <div class="shoppingCart__product_header">Mango People T-shirt</div>
+                        <p>
+                            <b>Color: </b>Red
+                            <br>
+                            <b>Size: </b>XII
+                        </p>
+                    </div>
+                    <div class="price_width shoppingCart__cart_price">$150</div>
+                    <div class="quantity_width shoppingCart__cart_quantity">
+                        <input type="number" value="1" min="0" max="999">
+                    </div>
+                    <div class="shipping_width shoppingCart__cart_shipping">FREE</div>
+                    <div class="subTotal_width shoppingCart__cart_subTotal">$300</div>
+                    <div class="action_width shoppingCart__cart_action">
+                        <img src="images/shopping-cart/delete.png" alt="delete">
+                    </div>
+                </div>
+
+                <div class="shoppingCart__cart_row">
+                    <div class="productDetails_width shoppingCart__product">
+                        <img src="images/shopping-cart/photo3.png" alt="photo">
+                        <div class="shoppingCart__product_header">Mango People T-shirt</div>
+                        <p>
+                            <b>Color: </b>Red
+                            <br>
+                            <b>Size: </b>XII
+                        </p>
+                    </div>
+                    <div class="price_width shoppingCart__cart_price">$150</div>
+                    <div class="quantity_width shoppingCart__cart_quantity">
+                        <input type="number" value="1" min="0" max="999">
+                    </div>
+                    <div class="shipping_width shoppingCart__cart_shipping">FREE</div>
+                    <div class="subTotal_width shoppingCart__cart_subTotal">$300</div>
+                    <div class="action_width shoppingCart__cart_action">
+                        <img src="images/shopping-cart/delete.png" alt="delete">
+                    </div>
+                </div>
+
+                <div class="shoppingCart__cart_buttons">
+                    <button>Clear shopping cart</button>
+                    <button>Continue shopping</button>
+                </div>
+            </div>
+
+            <div class="shoppingCart__bottom">
+                <div class="shoppingCart__address">
+                    <span class="shoppingCart__header">Shipping Adress</span>
+                    <input placeholder="Bangladesh" list="country">
+                    <datalist id="country">
+                        <option value="Bangladesh">
+                        <option value="Russia">
+                        <option value="Ukrain">
+                        <option value="Germany">
+                        <option value="USA">
+                    </datalist>
+                    <input placeholder="State">
+                    <input placeholder="Postcode / Zip">
+                    <button>Get a quote</button>
+                </div>
+                <div class="shoppingCart__coupon">
+                    <span class="shoppingCart__header">coupon discount</span>
+                    <p>Enter your coupon code if you have one</p>
+                    <input placeholder="State">
+                    <button>Apply coupon</button>
+                </div>
+                <div class="shoppingCart__total">
+                    <div class="shoppingCart__total_wrap shoppingCart__total_align">
+                        <p>Sub total $900</p>
+                        <span class="shoppingCart__header shoppingCart__total_align">GRAND TOTAL <span
+                                class="shoppingCart__total_red">$900</span></span>
+                        <div class="shoppingCart__separator"></div>
+                        <button>proceed to checkout</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <div class="reviews">
+        <div class="container">
+            <div class="reviews__left_part">
+                <div class="review">
+                    <div class="review__photo">
+                        <img src="images/reviews/photo.png" alt="photo">
+                    </div>
+                    <div class="review__text_block">
+                        <div class="review__text">
+                            “Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                            a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
+                        </div>
+                        <div class="review__name">
+                            Bin Burhan
+                        </div>
+                        <div class="review__location">
+                            Dhaka, Bd
+                        </div>
+                        <div class="review__switcher">
+                            <div class="review__switcher_item"></div>
+                            <div class="review__switcher_item"></div>
+                            <div class="review__switcher_item"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews__splitter"></div>
+            <div class="reviews__subscribe">
+                <form action="#" class="subscribe__wrap">
+                    <div class="subscribe__header">
+                        SUBSCRIBE
+                    </div>
+                    <div class="subscribe__text">
+                        FOR OUR NEWLETTER AND PROMOTION
+                    </div>
+                    <div class="subscribe__email">
+                        <input type="email" placeholder="Enter Your Email" class="subscribe__email_input">
+                        <button class="subscribe__email_button">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container footer__top">
+            <div class="footer__top_brand">
+                <div class="logo">
+                    BRAN<span>D</span>
+                </div>
+                <p class="footer__top_text">
+                    Objectively transition extensive data rather than cross functional solutions. Monotonectally
+                    syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an
+                    expanded
+                    array of processes and cross-unit partnerships.
+
+                    <br><br>Efficiently plagiarize 24/365 action items and focused infomediaries.
+                    Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                </p>
+            </div>
+            <nav class="footer__nav">
+                <span>COMPANY</span>
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">About</a>
+                <a href="#">How It Works</a>
+                <a href="#">Contact</a>
+            </nav>
+            <nav class="footer__nav">
+                <span>INFORMATION</span>
+                <a href="#">Tearms & Condition</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">How to Buy</a>
+                <a href="#">How to Sell</a>
+                <a href="#">Promotion</a>
+            </nav>
+            <nav class="footer__nav">
+                <span>SHOP CATEGORY</span>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Child</a>
+                <a href="#">Apparel</a>
+                <a href="#">Brows All</a>
+            </nav>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="copyright">© 2017 Brand All Rights Reserved.</div>
+                <div class="social_buttons">
+                    <a href="#">
+                        <img src="images/social/facebook.png" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="images/social/twitter.png" alt="twitter">
+                    </a>
+                    <a href="#">
+                        <img src="images/social/in.png" alt="in">
+                    </a>
+                    <a href="#">
+                        <img src="images/social/p.png" alt="p">
+                    </a>
+                    <a href="#">
+                        <img src="images/social/google.png" alt="google">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
